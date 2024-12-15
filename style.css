@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #202020, #111119);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+body.page1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('image1.jpg'); /* Image spécifique pour la page 1 */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+body.réussites::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/image.jpg'); /* Image spécifique pour la page 2 */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+body.échecs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/gateau.jpg'); /* Image spécifique pour la page 3 */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+body.voyages::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/voyage.jpg'); /* Image spécifique pour la page 3 */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+body.soirées::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/soirées.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+body.poki::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/poki.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.container {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  z-index: 4;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #d85c72;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+.intro {
+  font-size: 1.2em;
+  margin-top: 20px;
+  line-height: 1.6;
+  color: white;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #d85c72;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #bf4b60;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Autres styles comme dans ton CSS d'origine */
+
